@@ -33,6 +33,14 @@ room['narrow'].w_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
 
+
+class Parser:
+    '''
+    input command parser to receive player input and commands to move to rooms
+    '''
+    
+
+
 #
 # Main
 #
