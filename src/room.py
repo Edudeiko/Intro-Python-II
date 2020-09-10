@@ -5,6 +5,9 @@ class Room:
 
     name and description attributes,
     The room should also have `n_to`, `s_to`, `e_to`, and `w_to` attributes
+    
+    The `Room` class should be extended with a `list` that holds the `Item`s
+    that are currently in that room.
     '''
 
     def __init__(self, name, description):

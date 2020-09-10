@@ -38,7 +38,16 @@ class Parser:
     '''
     input command parser to receive player input and commands to move to rooms
     '''
-    
+    def __init__(self):
+        '''Valid commands are `n`, `s`, `e` and `w` which move the player North, South, East or West
+        '''
+        self.commands = ['move', 'get', 'quit']
+        self.directions = ['n', 's', 'e', 'w']
+
+    def valid_commands(self):
+        '''Print valid commands'''
+        print(f'Valid commands: {self.commands}')
+
 
 
 #
