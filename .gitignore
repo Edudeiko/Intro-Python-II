@@ -5,3 +5,6 @@ __pycache__
 # Notebooks
 .ipynb_checkpoints/
 test.ipynb
+
+# .py files
+src/other.py
