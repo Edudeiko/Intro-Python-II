@@ -3,9 +3,10 @@ A Store has Categories.      # has-a relationship
 Each Category has Products.  # has-a relationship
 '''
 
+
 class Store:
     def __init__(self, name, categories):    # Constructor
-    # attributes
+        # attributes
         self.name = name
         self.categories = categories
 
@@ -20,7 +21,7 @@ class Store:
 
 
 class Category:
-    def __init__(self, name): #, products)
+    def __init__(self, name):  # , products)
         self.name = name
 
     def __str__(self):
@@ -34,5 +35,6 @@ class Product:
 
     def __str__(self):
         return f'{self.name}\t${self.price}'
+
 
 my_store = Store('The Dugout', [Category('Running'), Category('Baseball'), Category('Basketball')])

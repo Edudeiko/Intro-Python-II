@@ -13,7 +13,7 @@ The remaining 2 point to the one Room object that is the outside:
 * `room['outside']`
 * `room['foyer'].s_to`
 
-```
+```text
 room['outside'] -> Room("Outside Cave Entrance")
                                ^
                                |
@@ -30,13 +30,13 @@ If you want to move the player (who is in the foyer in the diagram) to another r
 
 So if the player is in the foyer and types `s` to go south, we could set:
 
-```
+```py
 player.location = room['foyer'].s_to  # we were in the foyer, then went south
 ```
 
 and after that, the variable references would look like this, with player location pointing to the outside object:
 
-```
+```txt
                         player.location
                                |
                                v
